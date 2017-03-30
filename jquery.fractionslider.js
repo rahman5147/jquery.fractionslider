@@ -1095,7 +1095,9 @@
 					obj.css("height", y + "%");
 				}
 
-				obj.attr('data-fontsize', obj.css('font-size'));
+				if (obj.attr('data-fontsize') == null){
+					obj.attr('data-fontsize', obj.css('font-size'));
+				}
 				obj.attr('data-letterspacing', obj.css('letter-spacing'));
 
 			});
